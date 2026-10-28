@@ -14,9 +14,15 @@
             --border-color: #d1d5db;
         }
 
-        body {
+body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
+            
+            /* Tiled Background Image Settings */
+            background-image: url('bg.jpg');
+            background-repeat: repeat; /* This makes the image tile horizontally and vertically */
+            background-size: auto; /* Keeps the image at its original size for tiling */
+            background-color: var(--bg-color); /* Fallback color if image fails to load */
+            
             color: var(--text-color);
             margin: 0;
             padding: 1rem;
